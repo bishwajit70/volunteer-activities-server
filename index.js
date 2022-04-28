@@ -54,6 +54,11 @@ async function run() {
             res.send(result);
         })
 
+        // changes 
+        app.get('/hero', (req, res)=>{
+            res.send('Hero meets heroku')
+        })
+
         // app.get('/user/:id', async (req, res) => {
         //     const id = req.params.id;
         //     const query = { _id: ObjectId(id) };
